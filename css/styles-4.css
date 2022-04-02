@@ -1,0 +1,527 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #00cef2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arya', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Henny Penny', cursive;
+  text-transform: uppercase;
+  width: fit-content;
+  border: 3px dashed black;
+  border-radius: 10px;
+  outline: #4e64a4 solid 8px;
+  padding: 2px;
+}
+
+hr {
+  border-top: 10px double;
+  border-color: black;
+}
+
+a:link, a:visited {
+  font-family: 'Merienda', cursive;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: white;
+  font-size: 20px;
+  background-color: #4e64a4;
+}
+
+a:active {
+  color: white;
+}
+
+/**************************************************************HEADER**********/
+/**************************************************************HEADER**********/
+/**************************************************************HEADER**********/
+/**************************************************************HEADER**********/
+/**************************************************************HEADER**********/
+.header {
+  background-color: #4e64a4;
+  padding: 10px;
+  text-align: justify;
+  outline: #00cef2 solid 8px;
+}
+
+/******************************************************TOP NAVIGATION**********/
+/******************************************************TOP NAVIGATION**********/
+/******************************************************TOP NAVIGATION**********/
+/******************************************************TOP NAVIGATION**********/
+/******************************************************TOP NAVIGATION**********/
+/*style the top navigation bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #398ab9;
+}
+
+/*style the links in the top navigation*/
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/*styling the hover*/
+.topnav a:hover {
+  background-color: #4e64a4;
+  color: white;
+}
+
+/***********************************FLOATING NAVIGATION WITH DROPDOWN**********/
+/***********************************FLOATING NAVIGATION WITH DROPDOWN**********/
+/***********************************FLOATING NAVIGATION WITH DROPDOWN**********/
+/***********************************FLOATING NAVIGATION WITH DROPDOWN**********/
+/***********************************FLOATING NAVIGATION WITH DROPDOWN**********/
+/**********Floating nav********************************************************/
+/**********Floating nav********************************************************/
+/**********Floating nav********************************************************/
+.float-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #398ab9;
+  border: 3px dashed black;
+  outline: #4e64a4 solid 8px;
+}
+
+.float-ul, .float-li {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  overflow: hidden;
+}
+
+/**********Dropdpwn button and content*****************************************/
+/**********Dropdpwn button and content*****************************************/
+/**********Dropdpwn button and content*****************************************/
+/*style the dropdown button*/
+.dropbtn {
+  color: white;
+  padding: 5px 5px;
+  background-color: #398ab9;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*the container div needed to position the dropdown content*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*dropdown content which is hidden by default*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #398ab9;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 8px 16px 0;
+  padding: 5px 5px;
+  border: 3px dashed black;
+  z-index: 1
+}
+
+/*links inside the dropdown content*/
+.dropdown-content-a {
+  color: white;
+  padding: 5px 5px;
+  border: 3px dashed black;
+  text-decoration: none;
+  display: block;
+}
+
+/*show the dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*************************************************************CONTENT**********/
+/*************************************************************CONTENT**********/
+/*************************************************************CONTENT**********/
+/*************************************************************CONTENT**********/
+/*************************************************************CONTENT**********/
+/*styling each column*/
+/*styling each column*/
+/*styling each column*/
+.column {
+  float: left;
+}
+
+.column1 {
+  float: left;
+  padding: 10px 5px;
+  width: 15%;
+}
+
+.column2 {
+  float: left;
+  padding: 10px 10px;
+  width: 65%;
+}
+
+.column3 {
+  float: left;
+  padding: 10px 5px;
+  width: 20%;
+}
+
+/*this clears floats after the columns, i.e The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it*/
+.column-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, .column1, .column2, .column3 {
+    width: 100%;
+  }
+}
+
+/************************************************COLUMN ONE********************/
+/************************************************COLUMN ONE********************/
+/************************************************COLUMN ONE********************/
+/************************************************COLUMN ONE********************/
+/************************************************COLUMN ONE********************/
+/**********Vertical Navigation*************************************************/
+/**********Vertical Navigation*************************************************/
+/**********Vertical Navigation*************************************************/
+.vertical-ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+  background-color: #398ab9;
+  height: 85%;
+  overflow: hidden;
+  border: 3px dashed black;
+  border-radius: 2px 50px;
+  outline: #4e64a4 solid 8px;
+}
+
+.vertical-li a {
+  display: block;
+  color: white;
+  border-bottom: 3px dashed black;
+  background: #398ab9;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.vertical-li a:active {
+  background-color: #4e64a4;
+  color: white;
+}
+
+.vertical-li a:hover:not(.active) {
+  background-color: #4e64a4;
+  color: white;
+}
+
+/************************************************COLUMN TWO********************/
+/************************************************COLUMN TWO********************/
+/************************************************COLUMN TWO********************/
+/************************************************COLUMN TWO********************/
+/************************************************COLUMN TWO********************/
+/*****************************FLOATING SCROLL DIV******************************/
+/*****************************FLOATING SCROLL DIV******************************/
+/*****************************FLOATING SCROLL DIV******************************/
+/*****************************FLOATING SCROLL DIV******************************/
+/*****************************FLOATING SCROLL DIV******************************/
+.scroll {
+  padding: 10px;
+  background: #398ab9;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  outline: #4e64a4 solid 8px;
+  box-shadow: 20px 20px black;
+  overflow: auto;
+  float: left;
+}
+
+span {
+  border: 2px solid #4e64a4
+}
+
+/***********************TOOLTIP AND TOOLTIP ARROW******************************/
+/***********************TOOLTIP AND TOOLTIP ARROW******************************/
+/***********************TOOLTIP AND TOOLTIP ARROW******************************/
+/***********************TOOLTIP AND TOOLTIP ARROW******************************/
+/***********************TOOLTIP AND TOOLTIP ARROW******************************/
+/**********Top tooltip-bottom arrow********************************************/
+/**********Top tooltip-bottom arrow********************************************/
+/**********Top tooltip-bottom arrow********************************************/
+.top-tooltip-with-bottom-arrow {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
+}
+
+.top-tooltip-with-bottom-arrow .top-tooltiptext-with-bottom-arrow {
+  visibility: hidden;
+  width: 400px;
+  background-color: #398ab9;
+  color: white;
+  text-align: justify;
+  outline: #4e64a4 solid 8px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  /*positioning the tooltip*/
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -200px;
+  /*this is usually half of the width (600➗2=300) to center the tooltip*/
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.top-tooltip-with-bottom-arrow .top-tooltiptext-with-bottom-arrow::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /*this will place the tooltip arrow at the bottom of the tooltip*/
+  left: 50%;
+  /* this will center the arrow*/
+  margin-left: -20px;
+  border-width: 20px;
+  /*this specifies the size of the arrow... if you change this, it should be the same value as margin-left... this will keep the arrow centered*/
+  border-style: solid;
+  border-color: #4e64a4 transparent transparent transparent;
+  /*this is used to transform the content into an arrow... here the top border is set to #4e64a4 and the rest transparent (that way, the arrow will face the left)*/
+}
+
+.top-tooltip-with-bottom-arrow:hover .top-tooltiptext-with-bottom-arrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**********Right tooltip-left arrow********************************************/
+/**********Right tooltip-left arrow********************************************/
+/**********Right tooltip-left arrow********************************************/
+.right-tooltip-with-left-arrow {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
+}
+
+.right-tooltip-with-left-arrow .right-tooltiptext-with-left-arrow {
+  visibility: hidden;
+  width: 400px;
+  background-color: #398ab9;
+  color: white;
+  text-align: justify;
+  outline: #4e64a4 solid 8px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  /*positioning the tooltip*/
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  /*this is used to place the tooltip in the middle of it's container element...this has to be the same with the top and bottom padding (5px)*/
+  left: 110%;
+  /*this is how many percent to the right, the tooltip will be placed*/
+}
+
+.right-tooltip-with-left-arrow .right-tooltiptext-with-left-arrow::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 100%;
+  /* this will place the arrow to the left of the tooltip*/
+  margin-top: -20px;
+  border-width: 20px;
+  /*this specifies the size of the arrow... if you change this, it should be the same value as margin-top... this will keep the arrow centered*/
+  border-style: solid;
+  border-color: transparent #4e64a4 transparent transparent;
+}
+
+.right-tooltip-with-left-arrow:hover .right-tooltiptext-with-left-arrow {
+  visibility: visible;
+}
+
+/**********Bottom tooltip-top arrow********************************************/
+/**********Bottom tooltip-top arrow********************************************/
+/**********Bottom tooltip-top arrow********************************************/
+.bottom-tooltip-with-top-arrow {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
+}
+
+.bottom-tooltip-with-top-arrow .bottom-tooltiptext-with-top-arrow {
+  visibility: hidden;
+  width: 400px;
+  background-color: #398ab9;
+  color: white;
+  text-align: justify;
+  outline: #4e64a4 solid 8px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  /*positioning the tooltip*/
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px;
+  /*this is usually half of the width (600➗2=300) to center the tooltip*/
+}
+
+.bottom-tooltip-with-top-arrow .bottom-tooltiptext-with-top-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  /*this will place the tooltip arrow at the bottom of the tooltip*/
+  left: 50%;
+  /* this will center the arrow*/
+  margin-left: -20px;
+  border-width: 20px;
+  /*this specifies the size of the arrow... if you change this, it should be the same value as margin-left... this will keep the arrow centered*/
+  border-style: solid;
+  border-color: transparent transparent #4e64a4 transparent;
+  /*this is used to transform the content into an arrow... here the top border is set to #4e64a4 and the rest transparent (that way, the arrow will face the left)*/
+}
+
+.bottom-tooltip-with-top-arrow:hover .bottom-tooltiptext-with-top-arrow {
+  visibility: visible;
+}
+
+/**********Left tooltip-right arrow********************************************/
+/**********Left tooltip-right arrow********************************************/
+/**********Left tooltip-right arrow********************************************/
+.left-tooltip-with-right-arrow {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
+}
+
+.left-tooltip-with-right-arrow .left-tooltiptext-with-right-arrow {
+  visibility: hidden;
+  width: 200px;
+  background-color: #398ab9;
+  color: white;
+  text-align: justify;
+  outline: #4e64a4 solid 8px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  /*positioning the tooltip*/
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  /*this is used to place the tooltip in the middle of it's container element...this has to be the same with the top and bottom padding (5px)*/
+  right: 110%;
+  /*this is how many percent to the right, the tooltip will be placed*/
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.left-tooltip-with-right-arrow .left-tooltiptext-with-right-arrow::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  /* this will place the arrow to the left of the tooltip*/
+  margin-top: -20px;
+  border-width: 20px;
+  /*this specifies the size of the arrow... if you change this, it should be the same value as margin-top... this will keep the arrow centered*/
+  border-style: solid;
+  border-color: transparent transparent transparent #4e64a4;
+}
+
+.left-tooltip-with-right-arrow:hover .left-tooltiptext-with-right-arrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+/********************************************FORM******************************/
+/********************************************FORM******************************/
+/********************************************FORM******************************/
+.fieldsetie {
+  border: 3px solid #4e64a4;
+  border-radius: 2px 50px;
+}
+
+input, select {
+  padding: 5px 5px;
+  margin: 5px;
+  display: inline-block;
+  border: 3px solid #4e64a4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+  width: 48%;
+  background-color: #398ab9;
+  color: white;
+  padding: 14px 20px;
+  margin: 3px;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  color: white;
+  font-size: 30px;
+  background-color: #4e64a4;
+}
+
+/**********************************************COLUMN THREE********************/
+/**********************************************COLUMN THREE********************/
+/**********************************************COLUMN THREE********************/
+/**********************************************COLUMN THREE********************/
+/**********************************************COLUMN THREE********************/
+/***************************FIGURE AND FIGCAPTION******************************/
+/***************************FIGURE AND FIGCAPTION******************************/
+/***************************FIGURE AND FIGCAPTION******************************/
+/***************************FIGURE AND FIGCAPTION******************************/
+/***************************FIGURE AND FIGCAPTION******************************/
+figure {
+  border: 1px #4e64a4 solid;
+  /* This (margin: auto) sets the figure in the center. if we remove it. the figure moves to the side*/
+  margin: auto;
+  display: inline-block;
+}
+
+figcaption {
+  font-style: italic;
+  background-color: #4e64a4;
+  color: white;
+  text-align: center;
+}
+
+/****************************************************FOOTER********************/
+/****************************************************FOOTER********************/
+/****************************************************FOOTER********************/
+/****************************************************FOOTER********************/
+/****************************************************FOOTER********************/
+.footer {
+  background-color: #4e64a4;
+  padding: 10px;
+  text-align: center;
+}
