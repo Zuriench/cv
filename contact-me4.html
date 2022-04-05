@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Contact</title>
+  <link rel="icon" href="IMAGES/black short zechay logo png.png">
+  <link rel="stylesheet" href="css/styles-4.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Arya&family=Bungee+Inline&family=Creepster&family=El+Messiri&family=Emilys+Candy&family=Faster+One&family=Freckle+Face&family=Henny+Penny&family=Hi+Melody&family=Irish+Grover&family=Mali&family=Merienda&family=Merienda+One&family=Merriweather&family=Moo+Lah+Lah&family=Mystery+Quest&family=Niconne&family=Rancho&family=Redressed&family=Rye&family=Sacramento&family=Sail&family=Special+Elite&family=Twinkle+Star&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <img src="IMAGES/black long zechay logo png.png" alt="Zee's Logo" width="300" height="100">
+  </div>
+
+  <div class="float-nav">
+    <ul class="float-ul">
+      <li class="float-li"><a href="index.html">Homepage</a></li>
+      <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="hobbies-4.html">My Hobbies</a>
+        </div>
+      </li>
+      <li class="float-li"><a href="#news">News</a> </li>
+    </ul>
+  </div>
+
+    <div style="margin: 15px">
+      <h3>My Contact Details</h3>
+      <ol>
+        <li><a href="https://www.instagram.com/zechay/">Instagram</a></li>
+        <li><a href="https://web.facebook.com/Lenora12.xnera">Facebook</a></li>
+        <li><a href="chimziichne@gmail.com">Email</a></li>
+      </ol>
+      <hr>
+
+      <form action="mailto:chimziichne@gmail.com" method="post" enctype="text/plain">
+        <fieldset class="fieldsetie">
+          <legend>PERSONAL INFO:</legend>
+          <table>
+            <tbody>
+              <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" name="First Name" autofocus></td>
+              </tr>
+              <tr>
+                <td><label>Last Name</label></td>
+                <td><input type="text" name="Last Name" autofocus></td>
+              </tr>
+              <tr>
+                <td><label>Your Email</label></td>
+                <td><input type="email" name="Your Email" required></td>
+              </tr>
+              <tr>
+                <td><label>Country</label></td>
+                <td><select id="country" name="country">
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td><label for="phone">Enter your phone number:</label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required></td>
+              </tr>
+              <tr>
+                <td><label>Birthday</label></td>
+                <td><input type="date" id="Birthday" name="Birthday"></td>
+              </tr>
+              <tr>
+                <td><label for="Myfile">Select a file:</label></td>
+                <td><input type="file" id="myfile" name="My File" required></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset class="fieldsetie">
+          <legend>APPOINTMENT</legend>
+          Which of these would you want us to help you with;<br>
+          <table>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="Health Consultation" value=""></td>
+                <td><label>Health Consultation</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="Music Consultation" value=""></td>
+                <td><label>Music Consultation</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="Gospel Consultation" value=""></td>
+                <td><label>Gospel Consultation</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="Fashion Consultation" value=""></td>
+                <td><label>Fashion Consultation</label></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50"> <br>
+          <label>Appointment</label>
+          <input type="date" id="appt" name="appt"> <input type="time" id="appt" name="appt"> <br>
+
+          <input type="submit" value="submit">
+          <input type="reset">
+        </fieldset>
+      </form>
+    </div>
+
+  <div class="footer">
+    <p>footer</p>
+  </div>
+
+</body>
+
+</html>
